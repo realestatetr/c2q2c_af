@@ -1,0 +1,78 @@
+{
+ "note": "Controls run after the main sweep; printed outputs recorded here. chi_trial = bond cap used inside candidate trials.",
+ "seed_61002": {
+  "gaps": [
+   3,
+   2
+  ],
+  "true_blocks": [
+   [
+    5,
+    6
+   ],
+   [
+    4,
+    5
+   ]
+  ],
+  "search_wide": {
+   "chi_trial_32": {
+    "status": "OK",
+    "forced": 4,
+    "evals": 268,
+    "aligned": false,
+    "peak": true,
+    "time_s": 8
+   },
+   "chi_trial_64": {
+    "status": "OK",
+    "forced": 0,
+    "evals": 111,
+    "aligned": true,
+    "peak": true,
+    "time_s": 1
+   },
+   "chi_trial_128": {
+    "status": "OK",
+    "forced": 0,
+    "evals": 111,
+    "aligned": true,
+    "peak": true,
+    "time_s": 2
+   }
+  }
+ },
+ "seed_61004": {
+  "gaps": [
+   3,
+   4
+  ],
+  "true_blocks": [
+   [
+    6,
+    7
+   ],
+   [
+    5,
+    6
+   ]
+  ],
+  "search_wide": {
+   "chi_trial_64_main_sweep": {
+    "status": "TIMEOUT",
+    "forced": 5,
+    "evals": 307,
+    "aligned": false,
+    "time_s": 90
+   },
+   "chi_trial_128": {
+    "status": "OK",
+    "forced": 3,
+    "evals": 246,
+    "aligned": false,
+    "peak": true,
+    "time_s": 76
+   }
+  }
+ }
+}

@@ -1,0 +1,336 @@
+{
+ "args": {
+  "N": 24,
+  "depth": 6,
+  "Ks": [
+   0,
+   4,
+   12
+  ],
+  "seeds": 4,
+  "chi_mirror": 128,
+  "chi_ladder": [
+   4,
+   8,
+   16,
+   32,
+   64
+  ],
+  "direct_seeds": 2,
+  "out": "runB24"
+ },
+ "rows": [
+  {
+   "N": 24,
+   "depth": 6,
+   "K": 0,
+   "seed": 0,
+   "delta_exact": 0.09999999999999803,
+   "delta_design": 0.09999999999999998,
+   "naive": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 0.3024041749999924,
+    "frac_correct": 1.0,
+    "unswaps": 0
+   },
+   "greedy": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 0.33732944600001247,
+    "frac_correct": 1.0,
+    "unswaps": 0
+   }
+  },
+  {
+   "N": 24,
+   "depth": 6,
+   "K": 0,
+   "seed": 1,
+   "delta_exact": 0.09999999999999674,
+   "delta_design": 0.09999999999999998,
+   "naive": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 0.24355454299995927,
+    "frac_correct": 1.0,
+    "unswaps": 0
+   },
+   "greedy": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 0.2556580699999813,
+    "frac_correct": 1.0,
+    "unswaps": 0
+   }
+  },
+  {
+   "N": 24,
+   "depth": 6,
+   "K": 0,
+   "seed": 2,
+   "delta_exact": 0.09999999999999744,
+   "delta_design": 0.09999999999999998,
+   "naive": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 0.22223735200009287,
+    "frac_correct": 1.0,
+    "unswaps": 0
+   },
+   "greedy": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 0.22958913599995867,
+    "frac_correct": 1.0,
+    "unswaps": 0
+   }
+  },
+  {
+   "N": 24,
+   "depth": 6,
+   "K": 0,
+   "seed": 3,
+   "delta_exact": 0.09999999999999604,
+   "delta_design": 0.09999999999999998,
+   "naive": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 0.17677150500003336,
+    "frac_correct": 1.0,
+    "unswaps": 0
+   },
+   "greedy": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 0.19741147199999887,
+    "frac_correct": 1.0,
+    "unswaps": 0
+   }
+  },
+  {
+   "N": 24,
+   "depth": 6,
+   "K": 4,
+   "seed": 0,
+   "delta_exact": 0.09999999999999762,
+   "delta_design": 0.09999999999999998,
+   "naive": {
+    "success": true,
+    "max_bond": 32,
+    "capped": false,
+    "time": 0.2703426179999724,
+    "frac_correct": 1.0,
+    "unswaps": 0
+   },
+   "greedy": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 3.07371286099999,
+    "frac_correct": 1.0,
+    "unswaps": 4
+   }
+  },
+  {
+   "N": 24,
+   "depth": 6,
+   "K": 4,
+   "seed": 1,
+   "delta_exact": 0.09999999999999684,
+   "delta_design": 0.09999999999999998,
+   "naive": {
+    "success": true,
+    "max_bond": 64,
+    "capped": false,
+    "time": 0.6051073319999887,
+    "frac_correct": 1.0,
+    "unswaps": 0
+   },
+   "greedy": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 4.038260782000066,
+    "frac_correct": 1.0,
+    "unswaps": 4
+   }
+  },
+  {
+   "N": 24,
+   "depth": 6,
+   "K": 4,
+   "seed": 2,
+   "delta_exact": 0.09999999999999723,
+   "delta_design": 0.09999999999999998,
+   "naive": {
+    "success": false,
+    "max_bond": 128,
+    "capped": true,
+    "time": 9.226577556999928,
+    "frac_correct": 0.875,
+    "unswaps": 0
+   },
+   "greedy": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 3.5934796929999493,
+    "frac_correct": 1.0,
+    "unswaps": 4
+   }
+  },
+  {
+   "N": 24,
+   "depth": 6,
+   "K": 4,
+   "seed": 3,
+   "delta_exact": 0.09999999999999716,
+   "delta_design": 0.09999999999999998,
+   "naive": {
+    "success": true,
+    "max_bond": 64,
+    "capped": false,
+    "time": 0.5113933190000353,
+    "frac_correct": 1.0,
+    "unswaps": 0
+   },
+   "greedy": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 2.896156689999998,
+    "frac_correct": 1.0,
+    "unswaps": 4
+   }
+  },
+  {
+   "N": 24,
+   "depth": 6,
+   "K": 12,
+   "seed": 0,
+   "delta_exact": 0.09999999999999937,
+   "delta_design": 0.09999999999999998,
+   "naive": {
+    "success": false,
+    "max_bond": 128,
+    "capped": true,
+    "time": 44.74800768900002,
+    "frac_correct": 0.625,
+    "unswaps": 0
+   },
+   "greedy": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 9.922277159000032,
+    "frac_correct": 1.0,
+    "unswaps": 12
+   }
+  },
+  {
+   "N": 24,
+   "depth": 6,
+   "K": 12,
+   "seed": 1,
+   "delta_exact": 0.09999999999999702,
+   "delta_design": 0.09999999999999998,
+   "naive": {
+    "success": false,
+    "max_bond": 128,
+    "capped": true,
+    "time": 9.267642641000066,
+    "frac_correct": 0.8333333333333334,
+    "unswaps": 0
+   },
+   "greedy": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 7.51817356000015,
+    "frac_correct": 1.0,
+    "unswaps": 12
+   }
+  },
+  {
+   "N": 24,
+   "depth": 6,
+   "K": 12,
+   "seed": 2,
+   "delta_exact": 0.09999999999999681,
+   "delta_design": 0.09999999999999998,
+   "naive": {
+    "success": false,
+    "max_bond": 128,
+    "capped": true,
+    "time": 88.81486352899992,
+    "frac_correct": 0.7916666666666666,
+    "unswaps": 0
+   },
+   "greedy": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 9.807578862000128,
+    "frac_correct": 1.0,
+    "unswaps": 12
+   }
+  },
+  {
+   "N": 24,
+   "depth": 6,
+   "K": 12,
+   "seed": 3,
+   "delta_exact": 0.09999999999999705,
+   "delta_design": 0.09999999999999998,
+   "naive": {
+    "success": false,
+    "max_bond": 128,
+    "capped": true,
+    "time": 67.39361024499999,
+    "frac_correct": 0.8333333333333334,
+    "unswaps": 0
+   },
+   "greedy": {
+    "success": true,
+    "max_bond": 8,
+    "capped": false,
+    "time": 8.468156762999797,
+    "frac_correct": 1.0,
+    "unswaps": 12
+   }
+  }
+ ],
+ "direct": [
+  {
+   "seed": 0,
+   "chi_break": 64,
+   "ladder": [
+    4,
+    8,
+    16,
+    32,
+    64
+   ]
+  },
+  {
+   "seed": 1,
+   "chi_break": 32,
+   "ladder": [
+    4,
+    8,
+    16,
+    32,
+    64
+   ]
+  }
+ ]
+}

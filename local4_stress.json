@@ -1,0 +1,258 @@
+[
+ {
+  "N": 16,
+  "K": 24,
+  "seed": 0,
+  "local4": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 0.19866698499998847,
+   "frac_correct": 1.0,
+   "unswaps": 16,
+   "evals": 16
+  },
+  "exhaustive": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 4.000020429000017,
+   "frac_correct": 1.0,
+   "unswaps": 16,
+   "evals": 1920
+  },
+  "naive": {
+   "success": true,
+   "max_bond": 128,
+   "capped": true,
+   "time": 26.976317702000017,
+   "frac_correct": 1.0,
+   "unswaps": 0,
+   "evals": 0
+  }
+ },
+ {
+  "N": 16,
+  "K": 24,
+  "seed": 1,
+  "local4": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 0.17470011400001795,
+   "frac_correct": 1.0,
+   "unswaps": 18,
+   "evals": 18
+  },
+  "exhaustive": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 4.045132835999993,
+   "frac_correct": 1.0,
+   "unswaps": 18,
+   "evals": 2160
+  },
+  "naive": {
+   "success": false,
+   "max_bond": 128,
+   "capped": true,
+   "time": 18.12122067200005,
+   "frac_correct": 0.625,
+   "unswaps": 0,
+   "evals": 0
+  }
+ },
+ {
+  "N": 16,
+  "K": 24,
+  "seed": 2,
+  "local4": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 0.16029643899997836,
+   "frac_correct": 1.0,
+   "unswaps": 16,
+   "evals": 16
+  },
+  "exhaustive": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 4.259050682999998,
+   "frac_correct": 1.0,
+   "unswaps": 16,
+   "evals": 1920
+  },
+  "naive": {
+   "success": false,
+   "max_bond": 128,
+   "capped": true,
+   "time": 18.766187215000002,
+   "frac_correct": 0.9375,
+   "unswaps": 0,
+   "evals": 0
+  }
+ },
+ {
+  "N": 16,
+  "K": 24,
+  "seed": 3,
+  "local4": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 0.13802581300001293,
+   "frac_correct": 1.0,
+   "unswaps": 16,
+   "evals": 16
+  },
+  "exhaustive": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 3.426800248999996,
+   "frac_correct": 1.0,
+   "unswaps": 16,
+   "evals": 1920
+  },
+  "naive": {
+   "success": false,
+   "max_bond": 128,
+   "capped": true,
+   "time": 20.29018567700001,
+   "frac_correct": 0.5625,
+   "unswaps": 0,
+   "evals": 0
+  }
+ },
+ {
+  "N": 16,
+  "K": 48,
+  "seed": 0,
+  "local4": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 0.19438609000002316,
+   "frac_correct": 1.0,
+   "unswaps": 22,
+   "evals": 22
+  },
+  "exhaustive": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 5.281579056999988,
+   "frac_correct": 1.0,
+   "unswaps": 22,
+   "evals": 2640
+  },
+  "naive": {
+   "success": false,
+   "max_bond": 128,
+   "capped": true,
+   "time": 35.71613086100001,
+   "frac_correct": 0.625,
+   "unswaps": 0,
+   "evals": 0
+  }
+ },
+ {
+  "N": 16,
+  "K": 48,
+  "seed": 1,
+  "local4": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 0.17357515700001613,
+   "frac_correct": 1.0,
+   "unswaps": 26,
+   "evals": 26
+  },
+  "exhaustive": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 5.682563396000035,
+   "frac_correct": 1.0,
+   "unswaps": 26,
+   "evals": 3120
+  },
+  "naive": {
+   "success": false,
+   "max_bond": 128,
+   "capped": true,
+   "time": 25.27470883699999,
+   "frac_correct": 0.6875,
+   "unswaps": 0,
+   "evals": 0
+  }
+ },
+ {
+  "N": 16,
+  "K": 48,
+  "seed": 2,
+  "local4": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 0.16701675900003465,
+   "frac_correct": 1.0,
+   "unswaps": 24,
+   "evals": 24
+  },
+  "exhaustive": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 5.568683824000004,
+   "frac_correct": 1.0,
+   "unswaps": 24,
+   "evals": 2880
+  },
+  "naive": {
+   "success": false,
+   "max_bond": 128,
+   "capped": true,
+   "time": 16.091279502999953,
+   "frac_correct": 0.8125,
+   "unswaps": 0,
+   "evals": 0
+  }
+ },
+ {
+  "N": 16,
+  "K": 48,
+  "seed": 3,
+  "local4": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 0.16303220100002136,
+   "frac_correct": 1.0,
+   "unswaps": 20,
+   "evals": 20
+  },
+  "exhaustive": {
+   "success": true,
+   "max_bond": 8,
+   "capped": false,
+   "time": 4.585585772999991,
+   "frac_correct": 1.0,
+   "unswaps": 20,
+   "evals": 2400
+  },
+  "naive": {
+   "success": false,
+   "max_bond": 128,
+   "capped": true,
+   "time": 26.567473597000003,
+   "frac_correct": 0.875,
+   "unswaps": 0,
+   "evals": 0
+  }
+ }
+]
