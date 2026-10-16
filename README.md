@@ -20,6 +20,7 @@ Single CPU core. Wall times are machine dependent; all other fields are determin
 | `peaked_attack_cost_N*.png` | `python plot_peaked_attack.py peaked_attack_N16.json peaked_attack_cost_N16.png` (same for N20, N24) | |
 | `scaling_summary.md` | `python summarize_peaked_attack.py scaling_summary.md peaked_attack_N16.json peaked_attack_N20.json peaked_attack_N24.json` | |
 | `unswap_candidates.json` | `python compare_unswap_candidates.py unswap_candidates.json` | N in {16,20}, K in {4,12}, 5 seeds |
+| `statevector_check_comparisons.json` | `python verify_statevector_comparisons.py statevector_check_comparisons.json` | the 28 instances of `unswap_candidates.json` (20) and `local4_stress.json` (8) |
 | `local4_stress.json` | `python stress_local4.py local4_stress.json` (resume missing rows: `python stress_local4_resume.py DONE.json OUT.json`; **`OUT.json` holds only the newly produced rows, not a merged data set**) | N=16, K in {24,48}, 4 rows per K; row field `seed` is the index 0-3, the instance seed is `9000 + 100*K + seed` |
 | `patch_resynthesis.json`, `patch_resynthesis_convergence.png` | `python patch_resynthesis_feasibility.py --out DIR` | seed 2024, 8 targets, distance tol 1e-9 |
 | `patch_attack_K0.json`, `patch_attack_Kswap.json`, `patch_attack_cost.png` | `python c2q2c_patch_obfuscation_attack.py --N 16 --m 48 --Ps 0 2 4 6 --seeds 5 --K-swap 4 --out DIR` then `python plot_patch_attack.py patch_attack_K0.json patch_attack_cost.png` | adjacent patches |
@@ -31,7 +32,7 @@ Single CPU core. Wall times are machine dependent; all other fields are determin
 `--gap` ignores `--Ps` and `--K-swap`; use `--gap-patches` (default 2) and `--gap-K` (default 0).
 
 ## Verification
-* `python verify_claims.py .` recomputes every number quoted in the application from the JSON files (68 checks; exit code 1 on any failure).
+* `python verify_claims.py .` recomputes every number quoted in the application from the JSON files (71 checks; exit code 1 on any failure).
 * `python check_rerun.py REFERENCE.json RERUN.json [RERUN2.json ...]` is a strict, two-way reproducibility check (`--selftest` runs 25 built-in
   cases, each of which must be caught or, where stated, accepted). It rejects rows without identity fields (N, K, seed; or n_gates, pattern),
   and reports duplicate keys, reference rows missing from the re-runs (unless `--subset`), re-run rows without a reference, missing or extra
@@ -43,6 +44,10 @@ Single CPU core. Wall times are machine dependent; all other fields are determin
   was run as `python check_rerun.py gap_patch_unswap_K4.json RERUN.json --ignore time_limit,time_limit_soft,seed0`; without the ignore list the
   checker reports exactly 9 issues (3 rows x those three settings) and no result field. A `TIMEOUT` versus `OK` difference is never ignored.
 * `python check_determinism.py` is an older helper for the peaked sweep (matches on (K, seed)).
+* `python verify_statevector_comparisons.py statevector_check_comparisons.json` checks the 28 instances of the unswap comparison and the
+  stress test against exact statevectors (28/28; max |peak-weight error| 3.1e-15). `compare_unswap_candidates.py` and `stress_local4.py`
+  do not check their instances themselves. The peaked sweeps (87 instances = 45 for N=16, 30 for N=20, 12 for N=24) and the gap-patch and
+  adjacent-patch experiments check every instance inside their own scripts.
 * `SHA256SUMS` holds the hashes of every file in this directory (`sha256sum -c SHA256SUMS`).
 
 ## Re-run status (strict `check_rerun.py`, final code)
@@ -80,6 +85,6 @@ experiment, `unswap_candidates.json`, the remaining N=20 and N=24 rows and their
   pair gates differently and still collapse the operator (`final_profile_excess` <= 0.5).
 
 ## Known limitations
-N <= 24 (gap experiments N=16), 4-12 instances per setting, single re-synthesis family (2->3 gates on the same three wires),
+N <= 24 (gap experiments N=16), 4-8 instances per setting, single re-synthesis family (2->3 gates on the same three wires),
 no lossy patches, no entangling R/P layers, no unknown-middle attacker. Results are feasibility evidence, not evidence of
 hardness or of any advantage at scale.
